@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>New Movie:</h1>
+    <form action="/add-movie" method="post">
+        <input autocomplete="off" autofocus name="movie_title" placeholder="Movie name" type="text">
+        <input autocomplete="off" autofocus name="genre" placeholder="Genre" type="text">
+        <input autocomplete="off" autofocus name="year" placeholder="year" type="text">
+        <label for="director_id">Choose a Director:</label>
+            <select name="director_id" id="director_id">
+                {% for director in directors %}
+                    <option value={{director["director_id"]}}>{{director["first_name"]}} {{director["last_name"]}}</option>
+                {% endfor %}
+            </select>
+        <input type="submit" value="Add Movie">
+    </form>
+{% endblock %}

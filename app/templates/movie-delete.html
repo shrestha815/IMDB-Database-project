@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>Delete a Movie:</h1>
+    <form action="/delete-movie" method="POST">
+        <label for="movie_id">Choose a Movie to Delete:</label>
+            <select name="movie_id" id="movie_id">
+                {% for movie in movies %}
+                    <option value={{movie["movie_id"]}}>{{movie["movie_title"]}}</option>
+                {% endfor %}
+            </select>
+        <input type="submit" value="Delete Movie">
+    </form>
+{% endblock %}

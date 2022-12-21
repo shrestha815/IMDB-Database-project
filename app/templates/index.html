@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>Movie List:</h1>
+    <form action="/" method="post">
+        <table>
+            {% for movie_name in movie_list %}
+                <tr>
+                    <td>{{ movie_name['movie_title'] }} {{movie_name['rating']}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </form>
+    <form action="/movie-entry">
+        <input type="submit" value="Add a Movie" />
+    </form>
+    <form action="/update-rating">
+        <input type="submit" value="Rate a Movie">
+    </form>
+    <form action="/movie-delete">
+        <input type="submit" value="Delete a Movie">
+    </form>
+{% endblock %}

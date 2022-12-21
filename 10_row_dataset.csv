@@ -1,0 +1,11 @@
+movie_id,title,genre,year,first_name,last_name,rating,num_ratings,num_awards,age
+1,"Curse of Frankenstein, The",Horror,2003,Doralynne,Ryott,5,26,5,33
+2,What We Did on Our Holiday,Comedy,2009,Justus,Itzchaky,9,1,0,51
+3,"Fort Apache, the Bronx",Action,1965,Winthrop,Lutman,9,21,8,32
+4,Solstice,Drama,1997,Westbrooke,McIlory,10,29,4,38
+5,Astro Boy,Animation,1992,Kessia,Bernucci,10,46,5,63
+6,"Hand of Death, The (Shao Lin men)",Action,2009,Harman,Lammerding,9,97,3,76
+7,Archie To Riverdale and Back Again,Comedy,1986,Johannes,MacKereth,8,49,10,71
+8,Outpost: Black Sun,Action,2009,Angela,Faunch,9,59,0,68
+9,Make Your Move,Musical,1992,Arabela,Bartoleyn,3,76,4,46
+10,Animal House,Comedy,2011,Gilbert,Raittie,7,67,2,59
